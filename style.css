@@ -1,0 +1,98 @@
+
+body {
+    background-color: rgba(8, 8, 8);
+    font-family: 'Fixedsys', Verdana, Geneva, Tahoma, sans-serif;
+}
+* {
+    color: #b6b6b6
+  }
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid black;
+    margin: auto;
+}
+  
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot {
+    background-color: green;   
+    border: 5px solid rgb(40, 37, 37);
+    box-sizing: border-box;
+    
+}
+
+.wall {
+    background-color: rgb(98, 100, 245);
+}
+
+.power-pellet {
+    background-color: rgb(51, 164, 55);
+    border-radius: 10px;
+
+    /* box-shadow: 0 0 10px #5fecc9fe; */
+
+    animation: glow 0.5s ease-in-out infinite alternate;
+    z-index: 1;
+}
+
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px transparent, 0 0 20px transparent, 0 0 30px rgb(51, 164, 55), 0 0 40px rgb(51, 164, 55), 0 0 50px rgb(51, 164, 55), 0 0 60px rgb(51, 164, 55), 0 0 70px rgb(51, 164, 55);
+    }
+    to {
+      box-shadow: 0 0 10px transparent, 0 0 20px #5fecc9fe, 0 0 40px #5fecc9fe, 0 0 50px #5fecc9fe, 0 0 60px #5fecc9fe, 0 0 70px #5fecc9fe, 0 0 80px #5fecc9fe;
+    }
+  }
+
+
+.blinky {
+    background-color: red;
+    
+    border-radius: 10px;
+    border: unset;
+    box-sizing: unset;
+}
+
+.pinky {
+    background-color: pink;
+
+    border-radius: 10px;
+    border: unset;
+    box-sizing: unset;
+}
+
+.inky {
+    background-color: cyan;
+
+    border-radius: 10px;
+    border: unset;
+    box-sizing: unset;
+}
+
+.clyde {
+    background-color: orange;
+    
+    border-radius: 10px;
+    border: unset;
+    box-sizing: unset;
+}
+
+.pac-man {
+    /* background-color: yellow;     */
+    background: url('static/nihal-blur.png') 0 0;
+    
+    border-radius: 10px;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+}
+
